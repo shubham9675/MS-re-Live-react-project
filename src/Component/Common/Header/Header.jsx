@@ -1,154 +1,112 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-import './header.css';
+// import './header.css';
 
 function Header() {
 
 
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [SidebarOpen, setSidebarOpen] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  const [isOpen, setIsOpen] = useState(false);
-
+  // Sidebar toggle function
   const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
+    setSidebarOpen(!sidebarOpen);
   };
-
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
-
-
 
 
 
   return (
     <>
       <header className="gi-header">
-        <div className="header-top">
-          <div className="container-fluid" style={{ backgroundColor: "#4a5bafc4" }}>
-            <div className="row align-itegi-center">
-              <div className="header-top-right-inner d-flex justify-content-end">
+        <div className="d-flex justify-content-between align-items-center px-3 py-2 bg-white shadow-sm">
+          <Link to="/" className="d-flex align-items-center">
+            <img
+              src="/img/logoimg.png"
+              alt="Site Logo"
+              style={{ height: "20px", width: "auto", objectFit: "contain" }}
+            />
+          </Link>
+          <div className="d-none d-md-flex gap-4 align-items-center">
+            {/* <!-- Header User Start --> */}
+            <Link to="/" className="gi-header-btn gi-wish-toggle" title="Home">
+              <div className="fw-semibold text-black m-2">Home</div>
+            </Link>
+            <Link to="/about" className="gi-header-btn gi-wish-toggle" title="About">
+              <div className="fw-semibold text-black m-2">About</div>
+            </Link>
+            <Link to="/founder" className="gi-header-btn gi-cart-toggle" title="Founder">
+              <div className="fw-semibold text-black m-2">Founder</div>
+            </Link>
+            <Link to="/contact" className="gi-header-btn gi-cart-toggle" title="Contact">
+              <div className="fw-semibold text-black m-2">Contact</div>
+            </Link>
+          </div>
+          <div className="d-md-none">
+            <button onClick={toggleSidebar} className="gi-header-btn gi-site-menu-icon d-lg-none">
+              <i className="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+        <div className="container-fluid">
+          <div className="row align-itegi-center">
+            {/* <div className="header-top-right-inner d-flex justify-content-end">
                 <div className="gi-help py-1 text-white" to="faq.html" >Need Help? Mail Us at: info@ampurepharma.com</div>
-              </div>
-              <div className="col header-top-res d-lg-none">
-                <div className="gi-header-bottons">
-                  <div className="right-icons">
-                    {/* <Link to="login.html" className="gi-header-btn gi-header-user">
-                      <div className="header-icon"><i className="fa-regular fa-user"></i></div>
-                    </Link>
-                    <Link to="/" className="gi-header-btn gi-wish-toggle">
-                      <div className="header-icon"><i className="fa-regular fa-heart"></i></div>
-                      <span className="gi-header-count gi-wishlist-count">3</span>
-                    </Link>
-                    <Link to="/" className="gi-header-btn gi-cart-toggle">
-                      <div className="header-icon"><i className="fa-solid fa-cart-shopping"></i>
-                        <span className="main-label-note-new"></span>
-                      </div>
-                      <span className="gi-header-count gi-cart-count">3</span>
-                    </Link> */}
-                    <button onClick={toggleSidebar} className="gi-header-btn gi-site-menu-icon d-lg-none">
-                      <i className="fa-solid fa-bars"></i>
-                    </button>
-                  </div>
+              </div> */}
+
+          </div>
+        </div>
+        {/* ===== Sidebar (Mobile) ===== */}
+        {sidebarOpen && (
+          <div
+            className="position-fixed top-0 start-0 w-100 h-100"
+            style={{
+              backgroundColor: "rgba(0,0,0,0.4)",
+              zIndex: 1050,
+              transition: "background-color 0.4s ease"
+            }}
+            onClick={toggleSidebar}>
+            <div
+              className="position-fixed top-0 bg-white shadow p-4"
+              style={{
+                right: sidebarOpen ? "0" : "-250px",
+                width: "250px",
+                height: "100%",
+                zIndex: 1100,
+                transform: sidebarOpen ? "translateX(0)" : "translateX(100%)",
+                transition: "transform 0.4s ease-in-out",
+              }}
+              onClick={(e) => e.stopPropagation()} // prevent overlay click from closing instantly
+
+            >
+              {/* Close Button */}
+              <div className="text-end">
+                <div
+                  style={{ cursor: "pointer", fontSize: "1.5rem" }}
+                  onClick={toggleSidebar}
+                >
+                  ✕
                 </div>
+              </div>
+
+              {/* Sidebar Links */}
+              <div className="d-flex flex-column gap-3">
+                <Link to="/" className="" title="Home">
+                  <div onClick={toggleSidebar} className="fw-semibold text-black">Home</div>
+                </Link>
+                <Link to="/about" className="" title="About">
+                  <div onClick={toggleSidebar} className="fw-semibold text-black">About</div>
+                </Link>
+                <Link to="/founder" className="" title="Founder">
+                  <div onClick={toggleSidebar} className="fw-semibold text-black">Founder</div>
+                </Link>
+                <Link to="/contact" className="" title="Contact">
+                  <div onClick={toggleSidebar} className="fw-semibold text-black">Contact</div>
+                </Link>
               </div>
             </div>
           </div>
-          {isSidebarOpen && (
-            <div className="sidebar">
-              <button onClick={toggleSidebar} className="close-btn">&times;</button>
-              <nav>
-                <ul>
-                  <div className="category-dropdown px-2">
-                    <li className="d-flex justify-content-between text-black border-bottom" onClick={toggleDropdown}>Shop by category
-                      <span>{isOpen ? '−' : '+'}</span>
-                    </li>
-                    {isOpen && (
-                      <div className="dropdown">
-                        <ul>
-                          <li><Link to="/">Bone China</Link></li>
-                          <li><Link to="/">Wooden</Link></li>
-                          <li><Link to="/">Ceramic</Link></li>
-                        </ul>
-                      </div>
-                    )}
-                  </div>
-                  <div className="px-2">
-                    <li className="border-bottom"><Link to="/profile">Profile</Link></li>
-                  </div>
-                  <div className="px-2">
-                    <li className="border-bottom"><Link to="/profile">Order</Link></li>
-                  </div>
-                  <div className="px-2">
-                    <li className="border-bottom"><Link to="/profile">Logout</Link></li>
-                  </div>
-
-                </ul>
-              </nav>
-            </div>
-          )}
-        </div>
-
-        <div className="gi-header-bottom d-lg-block">
-          <div className="container-fluid position-relative">
-            <div className="row">
-              <div className="gi-flex">
-                <div className="align-self-center gi-header-logo">
-                  <div className="header-logo p-4">
-                    <Link to="/"><img src="/img/logoimg.png" alt="Site Logo"/></Link>
-                  </div>
-                </div>
-                <div className="align-self-center gi-header-search">
-                  <div className="header-search ">
-                    {/* <form className="gi-search-group-form">
-                      <input className="form-control gi-search-bar  rounded" placeholder="Search Products..." type="text" style={{maxWidth:'32rem'}} />
-                      <div className='position-absolute nav-searchicon-container' >
-                        <i className="fa-solid fa-magnifying-glass px-3"></i>
-                      </div>
-                      <div>
-                        
-                        <Sidebar Open={SidebarOpen} onClose={handleCloseSidebar} />
-                      </div>
-                    </form> */}
-
-                  </div>
-                </div>
-                <div className="gi-header-action align-self-center">
-                  <div className="gi-header-bottons">
-                    {/* <!-- Header User Start --> */}
-                    <div className="gi-acc-drop">
-                      <Link to="/" className="gi-header-btn gi-wish-toggle" title="Home">
-                        <div className="gi-btn-desc">
-                          <div className="gi-btn-stitle fw-semibold text-black m-2">Home</div>
-                        </div>
-                      </Link>
-                    </div>
-                    <Link to="/about" className="gi-header-btn gi-wish-toggle" title="About">
-                      <div className="gi-btn-desc">
-                        <div className="gi-btn-stitle fw-semibold text-black m-2">About</div>
-                      </div>
-                    </Link>
-                    <Link to="/founder" className="gi-header-btn gi-cart-toggle" title="Founder">
-                      <div className="gi-btn-desc">
-                        <div className="gi-btn-stitle fw-semibold text-black m-2">Founder</div>
-                      </div>
-                    </Link>
-                    <Link to="/contact" className="gi-header-btn gi-cart-toggle" title="Contact">
-                      <div className="gi-btn-desc">
-                        <div className="gi-btn-stitle fw-semibold text-black m-2">Contact</div>
-                      </div>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        )}
       </header>
     </>
   )
 }
 export default Header;
-
-

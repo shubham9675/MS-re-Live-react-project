@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Footer() {
 
@@ -7,9 +7,9 @@ function Footer() {
 
   return (
     <>
-      <footer className="gi-footer m-t-40">
+      <footer className="gi-footer">
         <div className="footer-container">
-          <div className="footer-top py-4">
+          <div className="footer-top py-3">
             <div className="container-fluid">
               <div className="row m-minus-991">
                 <div className="col-sm-12 col-lg-4 gi-footer-cat wow fadeInUp">

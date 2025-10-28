@@ -27,10 +27,10 @@ function MedicineExport() {
   };
 
   return (
-    <section className="py-5 bg-light">
+    <section className="py-4 bg-light">
       <div className="container text-center">
-        <h2 className="fw-bold mb-4">Exporting Medicines Worldwide</h2>
-        <p className="text-muted mb-5">
+        <h2 className="fw-bold">Exporting Medicines Worldwide</h2>
+        <p className="text-muted">
           We deliver high-quality medicines to countries across the globe.
         </p>
 
