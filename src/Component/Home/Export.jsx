@@ -16,7 +16,7 @@ function MedicineExport() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -29,7 +29,7 @@ function MedicineExport() {
   return (
     <section className="py-4 bg-light">
       <div className="container text-center">
-        <h2 className="fw-bold">Exporting Medicines Worldwide</h2>
+        <h2 className="fw-bold">Exporting Medicines WorldWide</h2>
         <p className="text-muted">
           We deliver high-quality medicines to countries across the globe.
         </p>
@@ -37,18 +37,23 @@ function MedicineExport() {
         <Slider {...settings}>
           {countries.map((country, index) => (
             <div key={index} className="p-3">
-              <div className="card shadow-sm border-0 h-100">
-                <div className="card-body text-center">
+              <div className="card shadow-sm ">
+                <div className="card-body text-center d-flex flex-column align-items-center justify-content-center">
                   <img
                     src={country.image}
                     alt={country.name}
-                    className="img-fluid mb-3 w-full"
-                    style={{ objectFit: "contain" }}
+                    className="img-fluid mb-2"
+                    style={{
+                      objectFit: "contain",
+                      height: "140px",
+                       width: "auto",
+                      }}
                   />
-                  <h5 className="fw-bold">{country.name}</h5>
+                  <h5 className="fw-bold mt-2">{country.name}</h5>
                 </div>
               </div>
             </div>
+
           ))}
         </Slider>
       </div>

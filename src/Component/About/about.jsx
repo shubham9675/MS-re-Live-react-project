@@ -10,7 +10,7 @@ function AboutUs() {
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    height: "50vh",
+    height: "40vh",
     color: "white",
   };
 
@@ -32,12 +32,12 @@ function AboutUs() {
       {/* About Section */}
       <section className="py-5">
         <div className="container">
-          <div className="row align-items-center">
+          <div className="row align-items-center flex-md-row-reverse">
             <div className="col-md-6 mb-4 mb-md-0">
               <img
                 src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
                 alt="About us"
-                className="img-fluid rounded shadow"
+                className="img-fluid rounded"
               />
             </div>
             <div className="col-md-6">
@@ -100,6 +100,37 @@ function AboutUs() {
       </section>
 
       {/* Team Section */}
+
+      <section className="py-5 bg-light">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-md-6 mb-4 mb-md-0 d-flex justify-content-center align-items-center">
+              <img
+                src="/img/founder.jpg"
+                alt="Co-Founder"
+                style={{ width: "450px", height: "450px" }}
+              />
+            </div>
+            <div className="col-md-6">
+              <h2 className="fw-bold">Mr Manvendra Singh </h2>
+              <h5 className="text-primary">Founder, MS Re-live</h5>
+              <p className="text-primary">MBBS</p>
+              <p className="text-muted">
+                John founded <strong>TechVision</strong> with a dream to
+                revolutionize how businesses use technology to grow. With a
+                strong background in software engineering and strategy, his
+                leadership has shaped the company’s innovative direction.
+              </p>
+              <p className="text-muted">
+                His philosophy—*“Technology is not just about code, it’s about
+                people”*—continues to inspire our team and clients alike.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       <section className="py-5">
         <div className="container text-center">
           <h2 className="fw-bold mb-4">Meet Our Team</h2>

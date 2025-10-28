@@ -36,6 +36,9 @@ function Header() {
             <Link to="/founder" className="gi-header-btn gi-cart-toggle" title="Founder">
               <div className="fw-semibold text-black m-2">Founder</div>
             </Link>
+            <Link to="/medicine" className="gi-header-btn gi-cart-toggle" title="Medicine">
+              <div className="fw-semibold text-black m-2">Medicine</div>
+            </Link>
             <Link to="/contact" className="gi-header-btn gi-cart-toggle" title="Contact">
               <div className="fw-semibold text-black m-2">Contact</div>
             </Link>
@@ -97,6 +100,9 @@ function Header() {
                 </Link>
                 <Link to="/founder" className="" title="Founder">
                   <div onClick={toggleSidebar} className="fw-semibold text-black">Founder</div>
+                </Link>
+                <Link to="/medicine" className="" title="Contact">
+                  <div onClick={toggleSidebar} className="fw-semibold text-black">Medicine</div>
                 </Link>
                 <Link to="/contact" className="" title="Contact">
                   <div onClick={toggleSidebar} className="fw-semibold text-black">Contact</div>

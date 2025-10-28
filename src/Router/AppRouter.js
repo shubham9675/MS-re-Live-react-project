@@ -8,6 +8,7 @@ import Header from '../Component/Common/Header/Header';
 import Footer from '../Component/Common/Footer/Footer';
 import Contact from '../Component/Contact/contact';
  import Founder from '../Component/Founder/founder';
+ import Medicine from '../Component/Medicine/medicine';
 
 function AppRouter() {
     return (
@@ -16,6 +17,7 @@ function AppRouter() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/Medicine" element={<Medicine />} />
                 <Route path='/founder' element={<Founder />} />
                 <Route path='/contact' element={<Contact />} />
                  <Route element={<NotFound />} />

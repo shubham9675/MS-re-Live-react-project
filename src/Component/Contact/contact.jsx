@@ -24,9 +24,9 @@ function Contact() {
           <h1 className="display-3 fw-bold mb-3">Contact Us</h1>
         </div>
       </section>
-      <section class="contact-page-sec py-3">
+      <section class="contact-page-sec">
         <div className='bg-light'>
-          <div class="container">
+          <div class="container py-3">
             <div class="row ">
               <div class="col-md-6">
                 <div class="contact-info">
@@ -47,7 +47,7 @@ function Contact() {
                     </div>
                     <div class="contact-info-text">
                       <h2>E-mail</h2>
-                      <span>info@LoremIpsum.com</span>
+                      <span>msrelivepharmaceuticals@gmail.com</span>
                     </div>
                   </div>
                 </div>
@@ -58,8 +58,8 @@ function Contact() {
                       <i class=" px-3 fas fa-clock"></i>
                     </div>
                     <div class="contact-info-text">
-                      <h2>office time</h2>
-                      <span>Mon - Thu  9:00 am - 4.00 pm</span>
+                      <h2>Contact No</h2>
+                      <span> +91-9536018986</span>
                     </div>
                   </div>
                 </div>

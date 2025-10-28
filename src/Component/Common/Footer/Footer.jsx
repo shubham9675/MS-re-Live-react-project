@@ -9,7 +9,7 @@ function Footer() {
     <>
       <footer className="gi-footer">
         <div className="footer-container">
-          <div className="footer-top py-3">
+          <div className="footer-top py-4">
             <div className="container-fluid">
               <div className="row m-minus-991">
                 <div className="col-sm-12 col-lg-4 gi-footer-cat wow fadeInUp">
