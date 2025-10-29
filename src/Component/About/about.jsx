@@ -30,7 +30,7 @@ function AboutUs() {
       </section>
 
       {/* About Section */}
-      <section className="py-5">
+      <section className="py-3">
         <div className="container">
           <div className="row align-items-center flex-md-row-reverse">
             <div className="col-md-6 mb-4 mb-md-0">
@@ -41,7 +41,7 @@ function AboutUs() {
               />
             </div>
             <div className="col-md-6">
-              <h2 className="fw-bold mb-3">Who We Are</h2>
+              <h2 className="fw-bold mb-3" style={{color: "#2b2f49ff"}}>Who We Are</h2>
               <p className="text-muted">
                 We are a team of creative professionals dedicated to delivering
                 top-notch digital solutions. Our mission is to help businesses
@@ -58,7 +58,7 @@ function AboutUs() {
       </section>
 
       {/* Mission Section */}
-      <section className="bg-light py-5">
+      <section className="bg-light py-3">
         <div className="container text-center">
           <h2 className="fw-bold mb-4">Our Mission & Values</h2>
           <div className="row g-4">
@@ -101,7 +101,7 @@ function AboutUs() {
 
       {/* Team Section */}
 
-      <section className="py-5 bg-light">
+      <section className="py-3 bg-light">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6 mb-4 mb-md-0 d-flex justify-content-center align-items-center">
@@ -131,35 +131,35 @@ function AboutUs() {
       </section>
 
 
-      <section className="py-5">
+      <section className="py-3">
         <div className="container text-center">
           <h2 className="fw-bold mb-4">Meet Our Team</h2>
           <div className="row g-4 justify-content-center">
             {[
               {
-                name: "John Doe",
-                role: "CEO & Founder",
-                img: "https://randomuser.me/api/portraits/men/45.jpg",
+                name: "Dr. Pushpendra Singh",
+                role: "Co founder, Managing Director",
+                img: "/img/pushpendar.jpg",
               },
               {
-                name: "Jane Smith",
-                role: "Founder",
-                img: "https://randomuser.me/api/portraits/women/44.jpg",
+                name: "Nimmi Rajput",
+                role: "Marketing Excutive",
+                img: "/img/marketing.jpg",
               },
               {
-                name: "Michael Brown",
-                role: "Co-Founder",
-                img: "https://randomuser.me/api/portraits/men/33.jpg",
+                name: "David Singh Rajput",
+                role: "Market Field Distrubutor",
+                img: "/img/david.jpg",
               },
               {
-                name: "Emily White",
-                role: "Marketing executive director",
-                img: "https://randomuser.me/api/portraits/women/68.jpg",
+                name: "Sushant Singh Rajput",
+                role: "Chief Financial Officer",
+                img: "/img/sushant.jpg",
               },
             ].map((member, index) => (
               <div key={index} className="col-md-3 col-sm-6 team-member">
-                <img src={member.img} alt={member.name} className="rounded-circle" />
-                <h5 className="mt-3">{member.name}</h5>
+                <img src={member.img} alt={member.name} className="rounded-circle" style={{ height: "150px", width: "150px", objectFit: "cover" }} />
+                <h5 className="mt-3" style={{color: "#2b2f49ff"}}>{member.name}</h5>
                 <p className="text-muted">{member.role}</p>
               </div>
             ))}

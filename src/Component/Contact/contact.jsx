@@ -36,7 +36,7 @@ function Contact() {
                     </div>
                     <div class="contact-info-text">
                       <h2>address</h2>
-                      <span>Teacher's colony near shiv temple Dhampur, Bijnor </span>
+                      <span className='flex-wrap'>Teacher's colony near shiv temple Dhampur, Bijnor </span>
                     </div>
                   </div>
                 </div>
@@ -47,7 +47,7 @@ function Contact() {
                     </div>
                     <div class="contact-info-text">
                       <h2>E-mail</h2>
-                      <span>msrelivepharmaceuticals@gmail.com</span>
+                      <span className='flex-wrap'>msrelivepharmaceuticals@gmail.com</span>
                     </div>
                   </div>
                 </div>

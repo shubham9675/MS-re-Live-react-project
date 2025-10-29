@@ -16,8 +16,24 @@ function Header() {
 
   return (
     <>
-      <header className="gi-header">
-        <div className="d-flex justify-content-between align-items-center px-3 py-2 bg-white shadow-sm">
+      <header>
+        <div className="text-light py-2 d-none d-md-block" style={{ background: "#2b2f49ff" }}>
+          <div className="container d-flex align-items-center justify-content-end gap-3">
+
+            {/* Contact Info */}
+            <div>
+              <i className="bi bi-telephone-fill"></i> +91-9536018986
+            </div>
+            <div>
+              <i className="bi bi-envelope-fill"></i> msrelivepharmaceuticals@gmail.com
+            </div>
+
+          </div>
+        </div>
+
+
+
+        <div className="d-flex justify-content-between align-items-center px-3 py-3 bg-white shadow-sm">
           <Link to="/" className="d-flex align-items-center">
             <img
               src="/img/logoimg.png"
@@ -111,7 +127,7 @@ function Header() {
             </div>
           </div>
         )}
-      </header>
+      </header >
     </>
   )
 }

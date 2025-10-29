@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
 
-
-
   return (
     <>
       <footer className="gi-footer">
@@ -16,7 +14,6 @@ function Footer() {
                   <div className="gi-footer-widget gi-footer-company">
                     <img src="/img/logoimg.png" className="gi-footer-logo" alt="footer logo" />
                     <p className="gi-footer-detail text-dark">— MS Re-Live, we are dedicated to manufacturing and marketing high-quality medicines that enhance global healthcare.</p>
-                    
                   </div>
                 </div>
                 <div className="col-sm-12 col-lg-4 gi-footer-info wow fadeInUp" data-wow-delay="0.2s">
@@ -32,7 +29,7 @@ function Footer() {
                     </div>
                   </div>
                 </div>
-               
+
                 <div className="col-sm-12 col-lg-4 gi-footer-cont-social wow fadeInUp" data-wow-delay="0.5s">
                   <div className="gi-footer-contact">
                     <div className="gi-footer-widget">
@@ -43,7 +40,7 @@ function Footer() {
                             <span className='mt-3'>
                               <i className="fa-solid fa-location-dot"></i>
                             </span>
-                            <p className='text-dark'>2548 Broaddus Maple Court, Madisonville KY 4783, USA.</p>
+                            <p className='text-dark'>Teacher's colony near shiv temple Dhampur, Bijnor</p>
                           </li>
                           <li className="gi-footer-link gi-foo-call">
                             <span>
@@ -55,7 +52,7 @@ function Footer() {
                             <span>
                               <i className="fa-regular fa-envelope"></i>
                             </span>
-                            <Link to="mailto:example@email.com">example@email.com</Link>
+                            <Link to="mailto:example@email.com">+91-9536018986</Link>
                           </li>
                         </ul>
                       </div>

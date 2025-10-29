@@ -12,8 +12,6 @@ const FounderTeam = () => {
   };
 
 
-
-
   return (
     <div>
       {/* Hero Section */}
@@ -33,9 +31,9 @@ const FounderTeam = () => {
           <div className="row align-items-center">
             <div className="col-md-6 mb-4 mb-md-0 d-flex justify-content-center align-items-center">
               <img
-                src="/img/pushpender.jpg"
+                src="/img/pushpendar.jpg"
                 alt="Co-Founder"
-                style={{ width: "450px", height: "450px" }}
+                style={{ width: "400px" }}
               />
             </div>
             <div className="col-md-6">
@@ -65,7 +63,7 @@ const FounderTeam = () => {
               <img
                 src="/img/marketing.jpg"
                 alt="Co-Founder"
-                style={{ width: "450px", height: "450px" }}
+                style={{ width: "400px" }}
               />
             </div>
             <div className="col-md-6">
@@ -91,9 +89,9 @@ const FounderTeam = () => {
           <div className="row align-items-center">
             <div className="col-md-6 mb-4 mb-md-0 d-flex justify-content-center align-items-center">
               <img
-                src="/img/sushant.jpg"
+                src="/img/david.jpg"
                 alt="Co-Founder"
-                style={{ width: "450px", height: "450px" }}
+                style={{ width: "400px" }}
               />
             </div>
             <div className="col-md-6">
@@ -120,9 +118,9 @@ const FounderTeam = () => {
           <div className="row align-items-center flex-md-row-reverse">
             <div className="col-md-6 mb-4 mb-md-0 d-flex justify-content-center align-items-center">
               <img
-                src="/img/david.jpg"
+                src="/img/sushant.jpg"
                 alt="Co-Founder"
-                style={{ width: "450px", height: "450px" }}
+                style={{ width: "400px" }}
               />
             </div>
             <div className="col-md-6">
