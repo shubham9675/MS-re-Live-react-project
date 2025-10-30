@@ -45,9 +45,9 @@ function Home() {
                 MS Re-Live ensures unmatched quality through advanced manufacturing, offers a diverse product range, and prioritizes customer satisfaction. Our commitment to innovation, ethical practices, and timely delivery makes us a trusted partner in healthcare solutions worldwide.
               </p>
               <div>
-                <a href="#learn" className="btn btn-outline-dark btn-lg">
-                  Learn More
-                </a>
+                <Link to="/contact" className="btn btn-outline-dark btn-lg">
+                  Contact
+                </Link>
               </div>
             </div>
 

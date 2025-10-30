@@ -36,7 +36,7 @@ function Contact() {
                     </div>
                     <div class="contact-info-text">
                       <h2>address</h2>
-                      <span className='flex-wrap'>Teacher's colony near shiv temple Dhampur, Bijnor </span>
+                      <span className='flex-wrap'>Teacher's colony near shiv temple Dhampur, Bijnor</span>
                     </div>
                   </div>
                 </div>

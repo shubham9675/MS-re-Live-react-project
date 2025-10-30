@@ -40,19 +40,19 @@ function Footer() {
                             <span className='mt-3'>
                               <i className="fa-solid fa-location-dot"></i>
                             </span>
-                            <p className='text-dark'>Teacher's colony near shiv temple Dhampur, Bijnor</p>
+                            <p className="text-dark">Teacher's colony near shiv temple Dhampur, Bijnor</p>
                           </li>
                           <li className="gi-footer-link gi-foo-call">
                             <span>
                               <i className="fa-brands fa-whatsapp"></i>
                             </span>
-                            <Link to="tel:+009876543210">+00 9876543210</Link>
+                            <p className='text-dark'>+91-9536018986</p>
                           </li>
                           <li className="gi-footer-link gi-foo-mail">
                             <span>
                               <i className="fa-regular fa-envelope"></i>
                             </span>
-                            <Link to="mailto:example@email.com">+91-9536018986</Link>
+                            <p className='text-dark'>msrelivepharmaceuticals@gmail.com</p>
                           </li>
                         </ul>
                       </div>
