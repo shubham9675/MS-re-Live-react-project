@@ -3,7 +3,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from 'react-router-dom';
 import './index.css';
+import Certificate from './certificate';
 import MedicineExport from './Export';
+import Medicine from './Medicine';
 
 function Home() {
 
@@ -89,6 +91,7 @@ function Home() {
           </div>
         </div>
       </section>
+      <Medicine />
 
       <section className="about-us-section py-5">
         <div className="container">
@@ -113,17 +116,44 @@ function Home() {
                 <h2 className="who-we-are">Who We Are ?</h2>
                 <hr className="dotted-line" />
               </div>
-              <p className="text-muted mb-4">
-                Our mission is to ensure accessibility, safety, and reliability in every product we provide. With years of experience and a dedicated team, we strive to innovate in healthcare and build trust with our clients.
+              <p className="text-dark mb-4">
+                Ms Re-Live Pharma is an emerging force in the pharmaceutical industry, focused on delivering quality-assured healthcare solutions. We continuously expand our product portfolio, strengthen our supply chain, and adopt modern manufacturing technologies to achieve excellence.
+                We aim to be a leading healthcare partner — <b className='fw-medium'> transforming challenges into opportunities for better health.</b>
               </p>
-              <Link to="/contact" className="btn btn-primary btn-lg">
-                Learn More
+              <Link to="/about" className="btn btn-primary btn-lg">
+                About Us
               </Link>
             </div>
           </div>
         </div>
       </section>
 
+      {/* <div className="container my-5">
+        <div className="row align-items-center">
+
+           <div className="col-md-6">
+            <img
+              src="/img/sucoon.jpeg"
+              alt="Sample"
+              className="img-fluid rounded shadow"
+              style={{height:"00px"}}
+            />
+          </div>
+
+           <div className="col-md-6">
+            <h2>Medicine</h2>
+            <p>
+              This is a description of the medicine. It helps reduce pain and fever.
+              Can be taken by adults and children with doctor’s advice.
+            </p>
+             <button className="btn btn-primary mt-3">Detail</button>
+          </div>
+
+        </div>
+      </div> */}
+
+
+      <Certificate />
       <MedicineExport />
 
     </>
