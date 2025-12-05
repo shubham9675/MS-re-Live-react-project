@@ -28,7 +28,7 @@ const FounderTeam = () => {
 
       {/* founder */}
 
-      <section className="py-5">
+      {/* <section className="py-5">
         <div className="container">
           <div className="row align-items-center flex-md-row-reverse">
            <div className="col-md-6 mb-4 mb-md-0 d-flex justify-content-center align-items-center">
@@ -55,7 +55,7 @@ const FounderTeam = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Founder Section */}
       <section className="py-5 bg-light">
@@ -72,7 +72,7 @@ const FounderTeam = () => {
               <h2 className="fw-bold">Dr. Pushpendra Singh</h2>
               <h5 className="text-primary">Co founder, Managing Director</h5>
               <p className="text-primary">B.Sc, MBBS</p>
-              <p className="text-muted">
+              {/* <p className="text-muted">
                 John founded <strong>TechVision</strong> with a dream to
                 revolutionize how businesses use technology to grow. With a
                 strong background in software engineering and strategy, his
@@ -81,7 +81,7 @@ const FounderTeam = () => {
               <p className="text-muted">
                 His philosophy—*“Technology is not just about code, it’s about
                 people”*—continues to inspire our team and clients alike.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
@@ -102,7 +102,7 @@ const FounderTeam = () => {
               <h2 className="fw-bold">Nimmi Rajput</h2>
               <h5 className="text-primary">Marketing Excutive</h5>
               <p className="text-primary">BBA, MBA (Hons.)</p>
-              <p className="text-muted">
+              {/* <p className="text-muted">
                 Jane brings structure, vision, and empathy to the company’s
                 operations. Her deep expertise in business management ensures
                 seamless coordination between teams and clients.
@@ -110,7 +110,7 @@ const FounderTeam = () => {
               <p className="text-muted">
                 She believes in empowering people to grow and pushing boundaries
                 to create meaningful change in the digital world.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
@@ -130,7 +130,7 @@ const FounderTeam = () => {
               <h2 className="fw-bold">David Singh Rajput</h2>
               <h5 className="text-primary">Market Field Distrubutor</h5>
               <p className="text-primary">B.Sc, D.pharma</p>
-              <p className="text-muted">
+              {/* <p className="text-muted">
                 John founded <strong>TechVision</strong> with a dream to
                 revolutionize how businesses use technology to grow. With a
                 strong background in software engineering and strategy, his
@@ -139,7 +139,7 @@ const FounderTeam = () => {
               <p className="text-muted">
                 His philosophy—*“Technology is not just about code, it’s about
                 people”*—continues to inspire our team and clients alike.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
@@ -159,7 +159,7 @@ const FounderTeam = () => {
               <h2 className="fw-bold">Sushant Singh Rajput</h2>
               <h5 className="text-primary">Chief Financial Officer</h5>
               <p className="text-primary">B.Sc, MCA</p>
-              <p className="text-muted">
+              {/* <p className="text-muted">
                 Jane brings structure, vision, and empathy to the company’s
                 operations. Her deep expertise in business management ensures
                 seamless coordination between teams and clients.
@@ -167,7 +167,7 @@ const FounderTeam = () => {
               <p className="text-muted">
                 She believes in empowering people to grow and pushing boundaries
                 to create meaningful change in the digital world.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>

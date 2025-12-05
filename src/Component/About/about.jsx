@@ -58,7 +58,7 @@ function AboutUs() {
       </section>
 
       {/* Mission Section */}
-      <section className="bg-light py-3">
+      <section className="bg-light py-4">
         <div className="container text-center">
           <h2 className="fw-bold mb-4">Our Mission & Values</h2>
           <div className="row g-4">
@@ -101,7 +101,7 @@ function AboutUs() {
 
       {/* Team Section */}
 
-      <section className="py-3 bg-light">
+      {/* <section className="py-3 bg-light">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6 mb-4 mb-md-0 d-flex justify-content-center align-items-center">
@@ -128,7 +128,7 @@ function AboutUs() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
 
       <section className="py-3">

@@ -11,25 +11,23 @@ function Home() {
 
 
   const testimonials = [
-    {
-      name: "Aarav Sharma",
-      title: "Customer",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_S5KjDvQNtRE1K4j2uD6Pq3ea47fl1iqGeQ&s",
-      text: "Amazing service! The products were top-notch and delivery was super fast. Highly recommend!",
-    },
-    {
-      name: "Neha Patel",
-      title: "Pharmacist",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_S5KjDvQNtRE1K4j2uD6Pq3ea47fl1iqGeQ&s",
-      text: "Excellent platform for medical supplies. Easy to use and very professional support team!",
-    },
-    {
-      name: "Rohit Verma",
-      title: "Health Consultant",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_S5KjDvQNtRE1K4j2uD6Pq3ea47fl1iqGeQ&s",
-      text: "The user experience is seamless. I found everything I needed quickly and securely.",
-    },
-  ];
+  {
+    name: "Aarav Sharma",
+     image: "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1", 
+    text: "Amazing service! The products were top-notch and delivery was super fast. Highly recommend!",
+  },
+  {
+    name: "Neha Patel",
+     image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1",
+    text: "Excellent platform for medical supplies. Easy to use and very professional support team!",
+  },
+  {
+    name: "Rohit Verma",
+     image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
+    text: "The user experience is seamless. I found everything I needed quickly and securely.",
+  },
+];
+
 
 
   return (
@@ -83,8 +81,7 @@ function Home() {
                     </div>
                     <p className="text-muted fst-italic">“{item.text}”</p>
                     <h5 className="fw-bold mt-3 mb-0 text-dark">{item.name}</h5>
-                    <small className="text-secondary">{item.title}</small>
-                  </div>
+                   </div>
                 </div>
               </div>
             ))}
