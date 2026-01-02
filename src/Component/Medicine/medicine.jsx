@@ -131,9 +131,9 @@ function Medicine() {
               />
             </div>
             <div className="col-md-6">
-              <h2 className="fw-bold">Aceloceta-SP</h2>
+              <h2 className="fw-bold">Asc-SP</h2>
               <p className="text-muted">
-                Aceloceta 650mg Tablet is used for the treatment of mild to moderate pain including headache, migraine, sharp nerve pain (neuralgia), toothache, sore throat, period pain, and musculoskeletal pain. The medication is also used to reduce fever. The medication is available in the form of oral tablets and should be taken exactly as directed by the doctor. The usual adult dose for Paracetamol 650mg Tablet is one tablet every 4 to 6 hours, not to exceed 4 tablets in 24 hours. Patients should not take the medication for longer than 10 days unless directed by the doctor.
+                AcP 650mg Tablet is used for the treatment of mild to moderate pain including headache, migraine, sharp nerve pain (neuralgia), toothache, sore throat, period pain, and musculoskeletal pain. The medication is also used to reduce fever. The medication is available in the form of oral tablets and should be taken exactly as directed by the doctor. The usual adult dose for Paracetamol 650mg Tablet is one tablet every 4 to 6 hours, not to exceed 4 tablets in 24 hours. Patients should not take the medication for longer than 10 days unless directed by the doctor.
               </p>
             </div>
           </div>
@@ -153,7 +153,7 @@ function Medicine() {
             <div className="col-md-6">
               <h2 className="fw-bold">Livbil</h2>
               <p className="text-muted">
-                Livbil Syrup is used in the treatment of cough. It relieves allergy symptoms such as runny nose, stuffy nose, sneezing, watery eyes, and congestion or stuffiness. It also thins mucus in the nose, windpipe, and lungs, making it easier to cough out.
+                Livbil is a liver-support medicine commonly used to improve liver health and function. The liver is one of the most important organs in the human body, responsible for detoxification, digestion, and metabolism. Due to unhealthy food habits, alcohol consumption, infections, or long-term medication use, the liver can become weak or damaged. Livbil helps protect and restore liver cells and supports overall liver performance.
               </p>
             </div>
           </div>
