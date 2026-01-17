@@ -72,12 +72,12 @@ function Home() {
                 <div className="card border-0 shadow-sm h-100 testimonial-card">
                   <div className="card-body p-4">
                     <div className="d-flex justify-content-center mb-3">
-                      <img
+                      {/* <img
                         src={item.image}
                         alt={item.name}
                         className="rounded-circle"
                         style={{ width: '80px', height: '80px', objectFit: 'cover' }}
-                      />
+                      /> */}
                     </div>
                     <p className="text-muted fst-italic">“{item.text}”</p>
                     <h5 className="fw-bold mt-3 mb-0 text-dark">{item.name}</h5>

@@ -119,19 +119,19 @@ function Medicine() {
         </div>
       </section>
 
-      {/* Marketing Excutive */}
+
       <section className="py-5">
         <div className="container">
           <div className="row align-items-center flex-md-row-reverse">
             <div className="col-md-6 mb-4 mb-md-0 d-flex justify-content-center align-items-center">
               <img
-                src="/img/aceloceta.jpeg"
+                src="/img/Acp-sp.jpeg"
                 alt="Co-Founder"
                 style={{ width: "400px" }}
               />
             </div>
             <div className="col-md-6">
-              <h2 className="fw-bold">Asc-SP</h2>
+              <h2 className="fw-bold">AcP-SP</h2>
               <p className="text-muted">
                 AcP 650mg Tablet is used for the treatment of mild to moderate pain including headache, migraine, sharp nerve pain (neuralgia), toothache, sore throat, period pain, and musculoskeletal pain. The medication is also used to reduce fever. The medication is available in the form of oral tablets and should be taken exactly as directed by the doctor. The usual adult dose for Paracetamol 650mg Tablet is one tablet every 4 to 6 hours, not to exceed 4 tablets in 24 hours. Patients should not take the medication for longer than 10 days unless directed by the doctor.
               </p>
@@ -196,7 +196,7 @@ function Medicine() {
           </div>
         </div>
       </section>
-       <section className="py-5">
+      <section className="py-5">
         <div className="container">
           <div className="row align-items-center flex-md-row-reverse">
             <div className="col-md-6 mb-4 mb-md-0 d-flex justify-content-center align-items-center">
@@ -219,9 +219,9 @@ function Medicine() {
           <div className="row align-items-center">
             <div className="col-md-6 mb-4 mb-md-0 d-flex justify-content-center align-items-center">
               <img
-                src="/img/vita-zeal.jpeg"
+                src="/img/vita-zeal.jpg"
                 alt="Co-Founder"
-                style={{ width: "280px" }}
+                style={{ width: "400px" }}
               />
             </div>
             <div className="col-md-6">
@@ -229,6 +229,25 @@ function Medicine() {
               <p className="text-muted">Multivitamins and minerals are used to trea t or prevent vitamins and minerals deficienc ies due to poor diet, certain illnesses such as digestive disorders or pregnancy.
                 These multivitamins, minerals and antioxid ants are important building blocks of the b ody and help maintain good health.
                 If you are managing multiple health needs, your doctor might suggest products such a s hypertension medicines, antibiotics, or Su pratel 20mg in addition to a healthy diet an d regular exercise.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-5 bg-light">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-md-6">
+              <h2 className="fw-bold">MsCal-k<sub>2</sub>7</h2>
+              <p className="text-muted">MsCal-K27 is an advanced calcium supplement that supports overall bone health. It helps in correcting calcium deficiency and strengthens bones. This medicine is commonly used in cases of osteoporosis and bone weakness. It is beneficial during pregnancy and breastfeeding to provide adequate calcium support. The presence of Vitamin D3 improves calcium absorption in the body. Vitamin K2-7 helps direct calcium to the bones where it is needed most. Magnesium and zinc support muscle function, joint health, and immunity.
+                .</p>
+            </div>
+            <div className="col-md-6 mb-4 mb-md-0 d-flex justify-content-center align-items-center">
+              <img
+                src="/img/MsCal.jpeg"
+                alt="Co-Founder"
+                style={{ width: "400px" }}
+              />
             </div>
           </div>
         </div>

@@ -13,7 +13,7 @@ function Medicine() {
     {
       id: 2,
       name: "Aceloceta-SP",
-      image: "/img/aceloceta.jpeg",
+      image: "/img/Acp-sp.jpeg",
       description: "Antibiotic for bacterial infections.",
     },
     {
@@ -43,7 +43,7 @@ function Medicine() {
     {
       id: 7,
       name: "Vita-zeal",
-      image: "/img/vita-zeal.jpeg",
+      image: "/img/vita-zeal.jpg",
       description: "For seasonal and skin allergies.",
     },
   ];
