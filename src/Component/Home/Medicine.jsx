@@ -1,67 +1,74 @@
 import React from "react";
-import Slider from "react-slick";
 
 function Medicine() {
 
   const medicines = [
-    {
-      id: 1,
-      name: "Cefbroad-SB",
-      image: "/img/cefbroad.jpeg",
-      description: "Pain reliever and fever reducer.",
-    },
+    // {
+    //   id: 1,
+    //   name: "Cefbroad-SB",
+    //   image: "/img/cefbroad.jpeg",
+    //   description: "Pain reliever and fever reducer.",
+    // },
     {
       id: 2,
-      name: "Aceloceta-SP",
+      name: "AcP-SP",
       image: "/img/Acp-sp.jpeg",
       description: "Antibiotic for bacterial infections.",
     },
-    {
-      id: 3,
-      name: "Livbil",
-      image: "/img/livbil.jpeg",
-      description: "Relief for cough and throat irritation.",
-    },
-    {
-      id: 4,
-      name: "Pancid-Go DSR",
-      image: "/img/pancid-go.jpeg",
-      description: "Boosts immunity and overall health.",
-    },
-    {
-      id: 5,
-      name: "Sucoon-O",
-      image: "/img/sucoon.jpeg",
-      description: "Relieves headache and muscle pain.",
-    },
-    {
-      id: 6,
-      name: "Vita-zeal Gold",
-      image: "/img/vita-zeal gold.jpeg",
-      description: "For seasonal and skin allergies.",
-    },
+    // {
+    //   id: 3,
+    //   name: "Livbil",
+    //   image: "/img/livbil.jpeg",
+    //   description: "Relief for cough and throat irritation.",
+    // },
+    // {
+    //   id: 4,
+    //   name: "Pancid-Go DSR",
+    //   image: "/img/pancid-go.jpeg",
+    //   description: "Boosts immunity and overall health.",
+    // },
+    // {
+    //   id: 5,
+    //   name: "Sucoon-O",
+    //   image: "/img/sucoon.jpeg",
+    //   description: "Relieves headache and muscle pain.",
+    // },
+    // {
+    //   id: 6,
+    //   name: "Vita-zeal Gold",
+    //   image: "/img/vita-zeal gold.jpeg",
+    //   description: "For seasonal and skin allergies.",
+    // },
     {
       id: 7,
       name: "Vita-zeal",
       image: "/img/vita-zeal.jpg",
       description: "For seasonal and skin allergies.",
     },
+    {
+      id: 8,
+      name: "MsCal-k",
+      sub: "2",
+      num:"7",
+      image: "/img/MsCal.jpeg",
+      description: "For seasonal and skin allergies.",
+    }
   ];
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    arrows: false,
-    responsive: [
-      { breakpoint: 992, settings: { slidesToShow: 2 } },
-      { breakpoint: 576, settings: { slidesToShow: 1 } },
-    ],
-  };
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   autoplaySpeed: 2000,
+  //   arrows: false,
+  //   responsive: [
+  //     { breakpoint: 992, settings: { slidesToShow: 2 } },
+  //     { breakpoint: 576, settings: { slidesToShow: 1 } },
+  //   ],
+  // };
 
   return (
     <section className="py-4 bg-light">
@@ -71,9 +78,10 @@ function Medicine() {
           style={{ backgroundColor: "#0050a1ff" }}>
           Our Medicines
         </h2>
-        <Slider {...settings}>
+        {/* <Slider {...settings}> */}
+        <div className="row">
           {medicines.map((medicines, index) => (
-            <div key={index} className="p-3">
+            <div key={index} className="p-3 col-md-4">
               <div className="card">
                 <div className="text-center d-flex flex-column align-items-center justify-content-center">
                   <img
@@ -86,13 +94,18 @@ function Medicine() {
                       width: "auto",
                     }}
                   />
-                  <h5 className="fw-bold mt-2">{medicines.name}</h5>
+                  <h5 className="fw-bold mt-2">
+                    {medicines.name}
+                    { <sub>{medicines.sub}</sub>}
+                    {medicines.num}
+                  </h5>
                 </div>
               </div>
             </div>
 
           ))}
-        </Slider>
+        </div>
+        {/* </Slider> */}
       </div>
     </section>
   );

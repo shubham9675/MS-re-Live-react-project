@@ -2,51 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Medicine() {
-  // const medicines = [
-  //   {
-  //     id: 1,
-  //     name: "Cefbroad-SB",
-  //     image: "/img/cefbroad.jpeg",
-  //     description: "Pain reliever and fever reducer.",
-  //   },
-  //   {
-  //     id: 2,
-  //     name: "Aceloceta-SP",
-  //     image: "/img/aceloceta.jpeg",
-  //     description: "Antibiotic for bacterial infections.",
-  //   },
-  //   {
-  //     id: 3,
-  //     name: "Livbil",
-  //     image: "/img/livbil.jpeg",
-  //     description: "Relief for cough and throat irritation.",
-  //   },
-  //   {
-  //     id: 4,
-  //     name: "Pancid-Go DSR",
-  //     image: "/img/pancid-go.jpeg",
-  //     description: "Boosts immunity and overall health.",
-  //   },
-  //   {
-  //     id: 5,
-  //     name: "Sucoon-O",
-  //     image: "/img/sucoon.jpeg",
-  //     description: "Relieves headache and muscle pain.",
-  //   },
-  //   {
-  //     id: 6,
-  //     name: "Vita-zeal Gold",
-  //     image: "/img/vita-zeal gold.jpeg",
-  //     description: "For seasonal and skin allergies.",
-  //   },
-  //   {
-  //     id: 7,
-  //     name: "Vita-zeal",
-  //     image: "/img/vita-zeal.jpeg",
-  //     description: "For seasonal and skin allergies.",
-  //   },
-  // ];
-
+  
   return (
     <div>
       {/* ===== Hero Section ===== */}
@@ -68,36 +24,8 @@ function Medicine() {
         </div>
       </section>
 
-      {/* ===== Medicine Grid ===== */}
+    
       {/* <section className="py-5 bg-light">
-        <div className="container">
-          <div className="row g-4">
-            {medicines.map((med) => (
-              <div key={med.id} className="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div className="card h-100 shadow-sm border-0">
-                   <div className="d-flex justify-content-center align-items-center p-3 bg-white">
-                    <img
-                      src={med.image}
-                      alt={med.name}
-                      className="img-fluid"
-                      style={{
-                        maxHeight: "200px",
-                        objectFit: "contain",
-                      }}
-                    />
-                  </div>
-
-                   <div className="card-body text-center">
-                    <h5 className="fw-bold">{med.name}</h5>
-                   </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
-      <section className="py-5 bg-light">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6 mb-4 mb-md-0 d-flex justify-content-center align-items-center">
@@ -117,7 +45,7 @@ function Medicine() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
 
       <section className="py-5">
@@ -140,7 +68,7 @@ function Medicine() {
         </div>
       </section>
       {/* Market Field Distrubutor */}
-      <section className="py-5 bg-light">
+      {/* <section className="py-5 bg-light">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6 mb-4 mb-md-0 d-flex justify-content-center align-items-center">
@@ -158,9 +86,9 @@ function Medicine() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Chief Financial Officer */}
-      <section className="py-5">
+      {/* <section className="py-5">
         <div className="container">
           <div className="row align-items-center flex-md-row-reverse">
             <div className="col-md-6 mb-4 mb-md-0 d-flex justify-content-center align-items-center">
@@ -195,8 +123,8 @@ function Medicine() {
             </div>
           </div>
         </div>
-      </section>
-      <section className="py-5">
+      </section> */}
+      {/* <section className="py-5">
         <div className="container">
           <div className="row align-items-center flex-md-row-reverse">
             <div className="col-md-6 mb-4 mb-md-0 d-flex justify-content-center align-items-center">
@@ -212,7 +140,7 @@ function Medicine() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="py-5 bg-light">
         <div className="container">
@@ -234,7 +162,7 @@ function Medicine() {
         </div>
       </section>
 
-      <section className="py-5 bg-light">
+      <section className="py-5">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6">
